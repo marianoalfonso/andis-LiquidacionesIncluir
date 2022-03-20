@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3846671-B6E6-4407-9CF5-20870213F2E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Modulo_Liquidador.My.MyApplication</StartupObject>
+    <RootNamespace>Modulo_Liquidador</RootNamespace>
+    <AssemblyName>Modulo_Liquidador</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\riv-fs01\LIQUIDACIONES PFIS\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2021.2.1.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Modulo_Liquidador.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Modulo_Liquidador.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>56F912A054F2EA465FD1EC269C0FC65805E858D9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Modulo_Liquidador_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons\app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="isl64, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\isl64.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Clases\clsConfiguration.vb" />
+    <Compile Include="Clases\clsConsolidacion.vb" />
+    <Compile Include="Clases\clsLiquidacion.vb" />
+    <Compile Include="Clases\clsLog.vb" />
+    <Compile Include="Clases\clsPrestador.vb" />
+    <Compile Include="Clases\clsSSRSManager.vb" />
+    <Compile Include="Clases\clsUser.vb" />
+    <Compile Include="Clases\clsValidate.vb" />
+    <Compile Include="Clases\cls_00001.vb" />
+    <Compile Include="Clases\cls_00002.vb" />
+    <Compile Include="Clases\mcls_00006.vb" />
+    <Compile Include="Clases\mcls_config.vb" />
+    <Compile Include="Clases\mcls_liquidacion.vb" />
+    <Compile Include="Clases\mcls_log.vb" />
+    <Compile Include="Clases\mcls_log_liquidaciones.vb" />
+    <Compile Include="Clases\mcls_security.vb" />
+    <Compile Include="Clases\mcls_tvws.vb" />
+    <Compile Include="Clases\mcls_user.vb" />
+    <Compile Include="Forms\frm01000.Designer.vb">
+      <DependentUpon>frm01000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm01000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm01003.Designer.vb">
+      <DependentUpon>frm01003.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm01003.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm02002.Designer.vb">
+      <DependentUpon>frm02002.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm02002.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm02003.Designer.vb">
+      <DependentUpon>frm02003.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm02003.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm03002.Designer.vb">
+      <DependentUpon>frm03002.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm03002.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm03003.Designer.vb">
+      <DependentUpon>frm03003.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm03003.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm04001.Designer.vb">
+      <DependentUpon>frm04001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm04001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConsultarCreditos.Designer.vb">
+      <DependentUpon>frmConsultarCreditos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmConsultarCreditos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDefault.Designer.vb">
+      <DependentUpon>frmDefault.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDefault.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEliminarLiquidacion.designer.vb">
+      <DependentUpon>frmEliminarLiquidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEliminarLiquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEliminarLiquidacionPeriodo.Designer.vb">
+      <DependentUpon>frmEliminarLiquidacionPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEliminarLiquidacionPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmImportacion.Designer.vb">
+      <DependentUpon>frmImportacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmImportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLiquidacion.Designer.vb">
+      <DependentUpon>frmLiquidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLiquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProcessAuth.Designer.vb">
+      <DependentUpon>frmProcessAuth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProcessAuth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSimulacionLiquidacion.Designer.vb">
+      <DependentUpon>frmSimulacionLiquidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSimulacionLiquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\mcls_tvw.vb" />
+    <Compile Include="Forms\redirect.Designer.vb">
+      <DependentUpon>redirect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\redirect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportacionFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportacionFacturacion.Designer.vb">
+      <DependentUpon>frmImportacionFacturacion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIQUIDACIONES_PFISDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIQUIDACIONES_PFISDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Funciones.vb" />
+    <Compile Include="Modulos\functions.vb" />
+    <Compile Include="Modulos\grid.vb" />
+    <Compile Include="Modulos\mmdl_00005.vb" />
+    <Compile Include="Modulos\Variables.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modulos\Validaciones.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frm01000.resx">
+      <DependentUpon>frm01000.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm01003.resx">
+      <DependentUpon>frm01003.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm02002.resx">
+      <DependentUpon>frm02002.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm02003.resx">
+      <DependentUpon>frm02003.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm03002.resx">
+      <DependentUpon>frm03002.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm03003.resx">
+      <DependentUpon>frm03003.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm04001.resx">
+      <DependentUpon>frm04001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConsultarCreditos.resx">
+      <DependentUpon>frmConsultarCreditos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDefault.resx">
+      <DependentUpon>frmDefault.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEliminarLiquidacion.resx">
+      <DependentUpon>frmEliminarLiquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEliminarLiquidacionPeriodo.resx">
+      <DependentUpon>frmEliminarLiquidacionPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmImportacion.resx">
+      <DependentUpon>frmImportacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLiquidacion.resx">
+      <DependentUpon>frmLiquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProcessAuth.resx">
+      <DependentUpon>frmProcessAuth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSimulacionLiquidacion.resx">
+      <DependentUpon>frmSimulacionLiquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\redirect.resx">
+      <DependentUpon>redirect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportacionFacturacion.resx">
+      <DependentUpon>frmImportacionFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="LIQUIDACIONES_PFISDataSet.xsc">
+      <DependentUpon>LIQUIDACIONES_PFISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LIQUIDACIONES_PFISDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIQUIDACIONES_PFISDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIQUIDACIONES_PFISDataSet.xss">
+      <DependentUpon>LIQUIDACIONES_PFISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Modulo_Liquidador_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\app.ico" />
+    <None Include="Images\login7.gif" />
+    <None Include="icons\nuevos\settings_78352.ico" />
+    <None Include="icons\nuevos\loupe_78347.ico" />
+    <None Include="icons\nuevos\loupe_78347_small.ico" />
+    <Content Include="icons\print_pref.ico" />
+    <Content Include="icons\SysReqMet.ico" />
+    <None Include="Images\security.gif" />
+    <None Include="Images\460x136.jpg" />
+    <None Include="Images\bck.jpg" />
+    <Content Include="Images\button OFF.JPG" />
+    <Content Include="Images\button ON.JPG" />
+    <Content Include="Images\erase.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualBasic.PowerPacks.Vs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Data.SqlServerCe">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

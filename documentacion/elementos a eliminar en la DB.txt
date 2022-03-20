@@ -1,0 +1,11 @@
+tablas a eliminar:
+drop table FACTURACIONES_CONSOLIDADAS_DETALLE
+drop table AUTORIZACIONES_CONSOLIDADAS_DETALLE
+drop table CONSOLIDACIONES
+
+
+stored procedure a eliminar:
+drop procedure pa_CONSOLIDAR_FACTURACIONES
+drop procedure pa_CONSOLIDAR_AUTORIZACIONES
+drop procedure pa_OBTENER_DETALLE_FACTURACION_CONSOLIDADA
+drop procedure pa_REVERTIR_CONSOLIDACION

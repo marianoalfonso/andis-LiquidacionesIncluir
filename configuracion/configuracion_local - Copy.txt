@@ -1,0 +1,13 @@
+[DATABASE_CREDENTIALS]
+DATA_SOURCE=LPT-BANGHO
+INITIAL_CATALOG=liquidaciones_pfis
+USER_ID=usrLiquidaciones
+PASSWORD=usrLiquidaciones
+CONNECTION_TIMEOUT=
+[CONFIGURACION_GENERAL]
+MONTO_ELEVACION=65000
+[REPORTING]
+URL=http://riv-sql03/ReportServer/Pages/ReportViewer.aspx?%2fadministracion%2fReporte_unico_Andis&rs:Command=Render&p_NUMLIQ=
+[CONSOLIDACION]
+PERIODO1=082018
+PERIODO2=092018

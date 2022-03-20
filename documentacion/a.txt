@@ -1,0 +1,2 @@
+            MessageBox.Show("error cargando usuarios")
+            MessageBox.Show(Err.Description, "error general", MessageBoxButtons.OK, MessageBoxIcon.Error)

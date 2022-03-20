@@ -1,0 +1,17 @@
+al inicio del formulario
+	Dim mcls_log As New mcls_log
+
+en el form_new
+	mcls_log.usuario = sUsuario
+        mcls_log.area = sArea
+        mcls_log.proceso = Me.Tag
+
+en el evento
+	mcls_log.detalle = "inicio de sesión correcto"
+
+ok: mcls_log.log_event_ok()	
+error:
+	mcls_log.detalle = "error validando credenciales (Sub OK_Click)"
+        mcls_log.error_codigo = Err.Number
+        mcls_log.error_descripcion = Err.Description
+        mcls_log.log_event_error()

@@ -1,0 +1,12 @@
+[AUTHENTICATION]
+SCOPE=local
+[DATABASE_CREDENTIALS]
+DATA_SOURCE=DESKTOP-WORK
+INITIAL_CATALOG=liquidaciones_pfis
+USER_ID=usrLiquidaciones
+PASSWORD=usrLiquidaciones
+CONNECTION_TIMEOUT=0
+[CONFIGURACION_GENERAL]
+MONTO_ELEVACION=65000
+[REPORTING]
+URL=http://riv-sql03/ReportServer/Pages/ReportViewer.aspx?%2fadministracion%2fReporte_unico_Andis&rs:Command=Render&p_NUMLIQ=

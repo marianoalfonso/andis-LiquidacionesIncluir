@@ -1,0 +1,58 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="LiquidacionesConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=|DataDirectory|\Datos\Liquidaciones.sdf&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Microsoft.SqlServerCe.Client.3.5&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=|DataDirectory|\Datos\Liquidaciones.sdf</Value>
+    </Setting>
+    <Setting Name="LIQUIDACIONES_PAMIConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=(local);Initial Catalog=LIQUIDACIONES_PAMI;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=(local);Initial Catalog=LIQUIDACIONES_PAMI;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="LiquidacionesConnectionString2" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=mrburns;Initial Catalog=LIQUIDACIONES_PAMI;User ID=usrLiquidacionPami;Password=Cocolandia877&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=mrburns;Initial Catalog=LIQUIDACIONES_PAMI;User ID=usrLiquidacionPami;Password=Cocolandia877</Value>
+    </Setting>
+    <Setting Name="LiquidacionesConnectionStringKrusty" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)" />
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="cs_LIQUIDACIONES_PFIS" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=mrburns;Initial Catalog=LIQUIDACIONES_PFIS;Persist Security Info=True;User ID=usrLiquidacionPfis&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=mrburns;Initial Catalog=LIQUIDACIONES_PFIS;Persist Security Info=True;User ID=usrLiquidacionPfis</Value>
+    </Setting>
+    <Setting Name="vaio_LIQUIDACIONES_PFISConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=MARIANO-VAIO;Initial Catalog=LIQUIDACIONES_PFIS;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=MARIANO-VAIO;Initial Catalog=LIQUIDACIONES_PFIS;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="LIQUIDACIONES_PFISConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=mrburns;Initial Catalog=LIQUIDACIONES_PFIS;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=mrburns;Initial Catalog=LIQUIDACIONES_PFIS;Integrated Security=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
