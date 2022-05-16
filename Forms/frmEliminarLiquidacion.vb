@@ -406,6 +406,7 @@ Public Class frmEliminarLiquidacion
 
     'REIMPRIME LA LIQUIDACION SELECCIONADA
     Private Sub btReimprimir_Click(sender As System.Object, e As System.EventArgs) Handles btReimprimir.Click
+        Dim sURL As String
         Dim iNumeroLiquidacion As Long
         Try
             'If Not mcls_security.mfn_00001(btReimprimir.Tag) Then
@@ -413,7 +414,10 @@ Public Class frmEliminarLiquidacion
             '    Exit Sub
             'End If
             iNumeroLiquidacion = dgvLiquidaciones.Rows(dgvLiquidaciones.CurrentRow.Index).Cells(0).Value
-            Dim sURL As String = urlReport & iNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & iNumeroLiquidacion
+            sURL = urlReport & iNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & iNumeroLiquidacion
+            Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
+
+            sURL = urlReport_PV & iNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & iNumeroLiquidacion
             Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
 
             ' '' '' ''VERIFICAR PORQUE GENERA ERROR (NO BORRAR)

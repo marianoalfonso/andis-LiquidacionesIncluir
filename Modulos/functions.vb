@@ -7,6 +7,7 @@
         Try
             gsMontoElevacion = configuracion.SearchValue("CONFIGURACION_GENERAL", "MONTO_ELEVACION")
             urlReport = configuracion.SearchValue("REPORTING", "URL")
+            urlReport_PV = configuracion.SearchValue("REPORTING", "URL_PV")
         Catch ex As Exception
             MsgBox("error en Cargar_Variables_Globales()", vbCritical)
         Finally

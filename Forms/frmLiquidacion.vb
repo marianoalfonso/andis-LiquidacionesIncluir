@@ -552,6 +552,9 @@ Public Class frmLiquidacion
                         'Dim sURL As String = "http://mrburns/ReportServer/Pages/ReportViewer.aspx?%2fLiquidaciones%2fReporte_unico_ANDIS&rs:Command=Render&p_NUMLIQ=" & sNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & sNumeroLiquidacion
                         Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
 
+                        sURL = "http://mrburns/ReportServer/Pages/ReportViewer.aspx?%2fLiquidaciones%2fReporte_PV&rs:Command=Render&p_NUMLIQ=" & sNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & sNumeroLiquidacion
+                        Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
+
                         ' '' '' ''VERIFICAR PORQUE GENERA ERROR (NO BORRAR)
                         ' '' '' ''generamos el nombre con el que el reporta va a grabarse en el disco
                         '' '' ''sNumeroPrestador = InputBox(sPeriodo & sFactura, "ingrese el nombre del reporte a grabarse")

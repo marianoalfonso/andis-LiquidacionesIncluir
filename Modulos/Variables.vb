@@ -11,6 +11,7 @@
 
     'variables de reportes
     Public urlReport As String
+    Public urlReport_PV As String
     Public gsMontoLimiteReporte As Double
 
     'variables temporales

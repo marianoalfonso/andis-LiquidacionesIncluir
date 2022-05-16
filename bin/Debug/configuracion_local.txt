@@ -1,12 +1,13 @@
 [AUTHENTICATION]
 SCOPE=local
 [DATABASE_CREDENTIALS]
-DATA_SOURCE=DESKTOP-WORK
+DATA_SOURCE=HP-PROBOOK
 INITIAL_CATALOG=liquidaciones_pfis
-USER_ID=usrLiquidaciones
-PASSWORD=usrLiquidaciones
+USER_ID=usrLiquidacionPfis
+PASSWORD=usuariopfis
 CONNECTION_TIMEOUT=0
 [CONFIGURACION_GENERAL]
-MONTO_ELEVACION=65000
+MONTO_ELEVACION=0
 [REPORTING]
 URL=http://riv-sql03/ReportServer/Pages/ReportViewer.aspx?%2fadministracion%2fReporte_unico_Andis&rs:Command=Render&p_NUMLIQ=
+URL_PV=http://riv-sql03/ReportServer/Pages/ReportViewer.aspx?%2fadministracion%2fReporte_PV&rs:Command=Render&p_NUMLIQ=
