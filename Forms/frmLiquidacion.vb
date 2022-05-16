@@ -546,13 +546,12 @@ Public Class frmLiquidacion
                     'mLog._sector = sArea
                     'mLog.registrar_liquidacion()
                     ''log
+                    Dim sURL As String
                     If scope <> "local" Then
-                        Dim sURL As String = urlReport & sNumeroLiquidacion & "&p_NUMERO_LIQUIDACION=" & sNumeroLiquidacion
-
-                        'Dim sURL As String = "http://mrburns/ReportServer/Pages/ReportViewer.aspx?%2fLiquidaciones%2fReporte_unico_ANDIS&rs:Command=Render&p_NUMLIQ=" & sNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & sNumeroLiquidacion
+                        sURL = urlReport & sNumeroLiquidacion & "&p_NUMERO_LIQUIDACION=" & sNumeroLiquidacion
                         Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
 
-                        sURL = "http://mrburns/ReportServer/Pages/ReportViewer.aspx?%2fLiquidaciones%2fReporte_PV&rs:Command=Render&p_NUMLIQ=" & sNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & sNumeroLiquidacion
+                        sURL = urlReport_PV & iNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & iNumeroLiquidacion
                         Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
 
                         ' '' '' ''VERIFICAR PORQUE GENERA ERROR (NO BORRAR)
