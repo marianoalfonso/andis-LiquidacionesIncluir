@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Modulo_Liquidador.exe" size="6180352">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Modulo_Liquidador.exe" size="6180864">
       <assemblyIdentity name="Modulo_Liquidador" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>hTwss8pMlBpOmv/ksCua5TWDgbo=</dsig:DigestValue>
+        <dsig:DigestValue>WeYyQcqsjI7X8vQeeWFz36niGb8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

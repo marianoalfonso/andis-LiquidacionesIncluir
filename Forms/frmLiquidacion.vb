@@ -551,8 +551,10 @@ Public Class frmLiquidacion
                         sURL = urlReport & sNumeroLiquidacion & "&p_NUMERO_LIQUIDACION=" & sNumeroLiquidacion
                         Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
 
-                        sURL = urlReport_PV & iNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & iNumeroLiquidacion
-                        Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
+                        If MessageBox.Show("¿ imprimir reporte PV ?", "reporte PV", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = vbYes Then
+                            sURL = urlReport_PV & iNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & iNumeroLiquidacion
+                            Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
+                        End If
 
                         ' '' '' ''VERIFICAR PORQUE GENERA ERROR (NO BORRAR)
                         ' '' '' ''generamos el nombre con el que el reporta va a grabarse en el disco
