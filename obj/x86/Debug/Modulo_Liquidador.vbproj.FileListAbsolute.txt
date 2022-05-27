@@ -359,7 +359,6 @@ C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\bin\Debug\Modulo_Liqui
 C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\bin\Debug\Modulo_Liquidador.pdb
 C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\bin\Debug\Modulo_Liquidador.xml
 C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\bin\Debug\isl64.dll
-C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\obj\x86\Debug\Modulo_Liquidador.vbprojResolveAssemblyReference.cache
 C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\obj\x86\Debug\Modulo_Liquidador.frm01000.resources
 C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\obj\x86\Debug\Modulo_Liquidador.frm01003.resources
 C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\obj\x86\Debug\Modulo_Liquidador.frm02002.resources

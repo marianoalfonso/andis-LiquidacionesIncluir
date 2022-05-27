@@ -34,6 +34,13 @@ Public Class Login
 
         'MessageBox.Show(pathConfig)
 
+
+        'secuencia de avisos por actualizaciones o cambios
+        Dim fecha As Date = DateTime.Now.ToString()
+        If fecha < "28/05/2022" Then
+            MessageBox.Show("(2022-05-19) - A partir de la fecha se incorpora la generacion automatica del reporte PV el cual se genera al momento de completar una liquidacion o en la reimpresion de la misma", "ACTUALIZACION DE VERSION", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+
         setTags()
         Try
             'Me.Tag = "01.05"
