@@ -381,3 +381,4 @@ C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\obj\x86\Debug\Modulo_L
 C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\obj\x86\Debug\Modulo_Liquidador.vbproj.GenerateResource.Cache
 C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\obj\x86\Debug\Modulo_Liquidador.exe.manifest
 C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\obj\x86\Debug\Modulo_Liquidador.application
+C:\projects\andis\incluirSalud\andis-LiquidacionesIncluir\obj\x86\Debug\Modulo_Liquidador.vbprojResolveAssemblyReference.cache

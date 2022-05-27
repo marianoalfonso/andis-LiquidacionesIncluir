@@ -552,7 +552,7 @@ Public Class frmLiquidacion
                         Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
 
                         If MessageBox.Show("¿ imprimir reporte PV ?", "reporte PV", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = vbYes Then
-                            sURL = urlReport_PV & iNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & iNumeroLiquidacion
+                            sURL = urlReport_PV & sNumeroLiquidacion & "&p_NUMERO_LIQUIDACION= " & sNumeroLiquidacion
                             Shell("C:\Program Files\Internet Explorer\iexplore.exe " & sURL, vbMaximizedFocus)
                         End If
 
